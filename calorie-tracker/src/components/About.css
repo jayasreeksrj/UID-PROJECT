@@ -1,0 +1,173 @@
+/* About.css */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f3f4f6;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content-wrapper {
+    max-width: 1500px; /* Sets the maximum width */
+    width: 1500px;       /* Ensures it takes up full width on smaller screens */
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;  
+    height: 700px;   /* Centers the container on larger screens */
+  }
+  
+  /* Logo and Title */
+  .logo-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .logo-dot {
+    color: #ff5722;
+  }
+  
+  /* Authentication Links */
+  .auth-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .auth-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .login {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .login:hover {
+    background-color: #388e3c;
+  }
+  
+  .signup {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .signup:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    margin: 30px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .feature-item {
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #4caf50;
+  }
+  
+  .feature-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .feature-item p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Benefits Section */
+  .benefits-section {
+    margin-top: 40px;
+  }
+  
+  .benefits-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .benefits-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .benefit-item {
+    flex: 1 1 150px;
+    max-width: 220px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-item h4 {
+    font-size: 1.2rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-item p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features,
+    .benefits-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-item,
+    .benefit-item {
+      max-width: 100%;
+    }
+  
+    .auth-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
